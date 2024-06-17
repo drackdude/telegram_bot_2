@@ -2,8 +2,11 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler ,filters , ContextTypes
 import download_from_youtube
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 TOKEN = os.environ.get("TOKEN")
+
 
 
 # commands
